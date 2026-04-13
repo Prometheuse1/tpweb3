@@ -49,12 +49,12 @@ button{
 .header div{
     display: flex;
     justify-content: center;
-    width: 1400px;
+    width: 1350px;
     height: 250px;
     border-radius: 25px;
     background-color: #8E9C78;
     margin-top: 200px;
-    margin-left: 50px;
+    margin-left: 6px;
 }
 
 .header .desktop{
@@ -72,7 +72,7 @@ button{
 
 .logo_cloud{
     margin-top: 60px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .logo_cloud p{
@@ -339,7 +339,7 @@ button{
 }
 .quote{
     margin-top: 150px;
-    margin-right: 250px;
+    margin-right: 150px;
 }
 
 .testimonial_section p{
@@ -353,6 +353,11 @@ button{
     font-weight: 600;
     color: #333;
     margin-bottom: 4px;
+}
+
+.testimonial_section .quote{
+    width: 100%;
+    margin-left: 50px;
 }
 
 .testimonial_section .para{
@@ -482,7 +487,7 @@ button{
 }
 
 .Rights{
-    margin-left: 1150px;
+    margin-left: 1000px;
     color: #485C11;
 }
 
