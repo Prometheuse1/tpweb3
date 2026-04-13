@@ -51,17 +51,23 @@ button{
     justify-content: center;
     width: 1400px;
     height: 250px;
-    border-radius: 15px;
-    background-color: #8fa870;
+    border-radius: 25px;
+    background-color: #8E9C78;
     margin-top: 200px;
     margin-left: 50px;
 }
 
-.header div img{
+.header .desktop{
     position: relative;
     bottom: 150px;
     width: 800px;
     height: 400px;
+}
+
+@media screen and (min-width: 600px) {
+    .header .mobile{
+        display: none;
+    }
 }
 
 .logo_cloud{
@@ -480,103 +486,80 @@ button{
     color: #485C11;
 }
 
-@media (max_width: 600px) {
+@media screen and (max-width: 600px) {
     .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 50px;
-        padding-right: 50px;
+        opacity: 0%;
     }
 
     .header h1{
-        display: flex;
-        justify-content: center;
-        font-family: 'Playfair Display', Georgia, serif;
-        font-weight: 500;
+        text-align: center;
         font-size: 75px;
-        margin-top: 50px;
-        line-height: 1.0;
-        letter-spacing: -0.025em;
-        color: #111111;
+        margin-top: 0px;
     }
 
     .header div{
         display: flex;
-        justify-content: center;
-        width: 500px;
-        height: 250px;
-        border-radius: 15px;
-        background-color: #8fa870;
-        margin-top: 200px;
-        margin-left: 50px;
+        width: 430px;
+        height: 330px;
+        margin-top: 130px;
+        margin-left: 0px;
     }
 
-    .header div img{
+    .header .mobile{
         position: relative;
-        bottom: 150px;
-        width: 800px;
+        bottom: 70px;
+        left: 5px;
+        width: 300px;
         height: 400px;
     }
 
-    .logo_cloud{
-        margin-top: 60px;
-        margin-left: 50px;
+    .header .desktop{
+        display: none;
     }
 
-    .logo_cloud p{
-        color: darkgray;
+    .logo_cloud{
+        margin-top: 45px;
+        margin-left: 15px;
     }
 
     .logo_row{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         margin-top: 50px;
         gap: 130px
     }
 
     .line{
-
-        width: 93%;
-        height: 1px;
-        border-radius: 5px;
-        background-color: darkgray;
-        margin-top: 50px;
-        margin-left: 50px;
-        opacity: 40%;
+        width: 94%;
+        margin-left: 15px;
     }
 
     .benifits_section{
         margin-top: 100px;
-        margin-left: 50px;
+        margin-left: 15px;
     }
 
     .benifits_section p{
-        font-family: 'IBM Plex Mono', monospace;
-        font-weight: 400;
-        font-size: 15px;
-        color: darkgray;
-        letter-spacing: 0em;
+        width: 450px;
     }
 
     .benifits_section h1{
-        font-family: 'Playfair Display', Georgia, serif;
         font-weight: 500;
-        font-size: clamp(32px, 4.5vw, 52px);
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        color: #111111;
+        width: 340px;
+        font-size: 45px;
     }
 
     .icon_modules{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-top: 50px;
         margin-right: 40px;
     }
 
     .icon{
-        width: 280px;
+        width: 100%;
         height: 200px;
     }
 
@@ -599,6 +582,7 @@ button{
     .icon p{
         font-family: 'Inter', system-ui, sans-serif;
         font-weight: 300;
+        width: 96%;
         font-size: 13.5px;
         color: darkgray;
         line-height: 1.65;
@@ -606,16 +590,21 @@ button{
 
     .Hero{
         width: 100%;
-        height: 600px;
+        height: 100%;
         margin-top: 100px;
     }
 
     .features_carousel{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 100px;
-        margin-left: 50px;
+        margin-left: 15px;
         width: 100%;
+    }
+
+    .features_carousel .text{
+        width: 95%;
     }
 
     .features_carousel .line{
@@ -623,22 +612,8 @@ button{
         margin-left: 0px;
     }
 
-    .features_carousel h1{
-        font-family: 'Playfair Display', Georgia, serif;
-        font-weight: 500;
-        font-size: clamp(32px, 4vw, 48px);
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        color: #111111;
-    }
-
     .features_carousel .sub_title{
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 300;
-        font-size: 14px;
-        color: darkgray;
-        line-height: 1.65;
-        margin-bottom: 30px;
+        font-size: 12px;
     }
 
     .features_carousel img{
@@ -654,33 +629,17 @@ button{
         align-items: center;
     }
 
-    .element h1{
-        font-family: 'IBM Plex Mono', monospace;
-        font-weight: 700;
-        font-size: 15px;
-        color: #bbbbbb;
-    }
-
     .element p{
-        margin-left: 25px;
-        font-family: 'Inter', system-ui, sans-serif;
         font-weight: 1000;
-        font-size: 13.5px;
-        color: #555555;
-        line-height: 1.55;
+        font-size: 11px;
     }
 
     .discover{
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 700;
-        width: 150px;
-        font-size: 13.5px;
-        color: black;
-        background: #d8e8b0;
-        border-radius: 100px;
-        margin-top: 50px;
-        padding: 11px 22px;
-        border: none;
+        margin-bottom: 50px;
+    }
+
+    .image{
+        width: 94%;
     }
 
     .specifications_table{
@@ -693,43 +652,36 @@ button{
     .specifications_table p{
         font-family: 'Inter', system-ui, sans-serif;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 12px;
         color: darkgray;
         line-height: 1.65;
         text-align: center;
-        max-width: 550px;
+        width: 360px;
         margin: 0 auto;
     }
 
     .specifications_table h1{
-        font-family: 'Playfair Display', Georgia, serif;
-        font-weight: 700;
-        font-size: clamp(32px, 4.5vw, 52px);
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        color: #111111;
-        text-align: center;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        width: 200px ;
     }
 
     .table{
         display: flex;
+        overflow: scroll;
         justify-content: center;
         border: 5px;
-        margin-top: 100px;
-    }
-
-    .column{
-        box-shadow: -20px -4px 20px rgba(0, 0, 0, 0.08);
-        border: 1px solid #eee;
-        border-radius: 15px;
-        padding: 15px;
-        opacity: 1;
-        
+        margin-top: 50px;
     }
 
     .item{
-        width: 400px;
+        width: 200px;
         height: 80px;
+    }
+
+    .image2{
+        width: 100%;
+        height: 100%;
     }
 
     .head{
@@ -779,16 +731,18 @@ button{
 
     .testimonial_section{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         margin-top: 100px;
     }
 
     .testimonial_section img{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .quote{
-        margin-top: 150px;
-        margin-right: 250px;
+        width: 100%;
+        margin-top: 55px;
+        margin-right: 0px;
     }
 
     .testimonial_section p{
@@ -798,42 +752,33 @@ button{
     }
 
     .testimonial_section .title{
-        font-size: 16px;
-        font-weight: 600;
         color: #333;
         margin-bottom: 4px;
     }
 
     .testimonial_section .para{
-        font-family: 'Lora', serif;
-        font-size: 28px;
-        line-height: 1.4;
-        color: #1a1a1a;
-        margin: 0 0 30px 0;
-        letter-spacing: -0.01em;
+        width: 100%;
+        font-size: 18px;
+        margin-left: 95px;
     }
 
     .make_your_success{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 100px;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 50px;
+        margin-left: 15px;
     }
 
     .make_your_success h1{
         font-family: 'Playfair Display', serif;
         font-size: 48px;
         font-weight: 500;
-        margin-left: 70px;
-    }
-
-    .make_your_success .discover{
-        margin-top: 0px;
-        margin-right: 50px;
+        margin-left: 0px;
     }
 
     .lookup{
         display: flex;
+        overflow: scroll;
         justify-content: space-around;
     }
 
@@ -865,12 +810,15 @@ button{
         color: #666;
     }
 
+    .card{
+        margin-right: 20px;
+    }
+
     .how_it_works img{
-        width: 97%;
-        height: 700px;
-        border-radius: 15px;
-        margin-top: 100px;
-        margin-left: 25px;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        margin-left: 0px;
     }
 
     .centered_CTA{
@@ -897,22 +845,15 @@ button{
     }
 
     .centered_CTA button{
-        width: 650px;
+        width: 100%;
         margin-top: 40px;
         margin-bottom: 100px;
     }
 
     .footer ul{
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 500;
-        font-size: 17px;
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        margin-top: 30px;
-        margin-bottom: 100px;
-        list-style-type: none;
-        
+        flex-direction: column;
+        align-items: start;
+        padding-left: 25px;
     }
 
     .credits{
@@ -931,7 +872,7 @@ button{
     }
 
     .Rights{
-        margin-left: 1150px;
+        margin-left: 100px;
         color: #485C11;
     }
 }
