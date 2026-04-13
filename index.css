@@ -504,7 +504,7 @@ button{
 
     .header div{
         display: flex;
-        width: 430px;
+        width: 417px;
         height: 330px;
         margin-top: 130px;
         margin-left: 0px;
@@ -541,11 +541,13 @@ button{
     }
 
     .benifits_section{
+        flex-wrap: wrap;
         margin-top: 100px;
         margin-left: 15px;
     }
 
     .benifits_section p{
+        font-size: 15px;
         width: 450px;
     }
 
@@ -674,7 +676,8 @@ button{
     .table{
         display: flex;
         overflow: scroll;
-        justify-content: center;
+        justify-content: start;
+        width: 100%;
         border: 5px;
         margin-top: 50px;
     }
@@ -764,7 +767,7 @@ button{
     .testimonial_section .para{
         width: 100%;
         font-size: 18px;
-        margin-left: 95px;
+        margin-left: 0px;
     }
 
     .make_your_success{
