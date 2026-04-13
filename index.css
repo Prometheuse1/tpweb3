@@ -501,7 +501,7 @@ button{
 
 @media screen and (max-width: 600px) {
     .navbar{
-        opacity: 0%;
+        display: none;
     }
 
     .header h1{
