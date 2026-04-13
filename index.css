@@ -756,6 +756,15 @@ button{
         margin-left: 0px;
     }
 
+    .quote{
+        width: 400px;
+        margin-right: 0px;
+    }
+
+    img{
+        margin-right: 0px;
+    }
+
     .testimonial_section p{
         font-size: 14px;
         color: #d8e8b0;
@@ -769,6 +778,7 @@ button{
 
     .testimonial_section .para{
         font-size: 18px;
+        width: 100%;
         margin-left: 0px;
         margin-right: 0px;
     }
