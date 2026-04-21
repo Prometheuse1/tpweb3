@@ -499,7 +499,7 @@ button{
     color: #485C11;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
 
     .navbar{
         justify-content: center;
