@@ -505,13 +505,12 @@ button{
         justify-content: center;
         flex-direction: column;
         display: none;
-        position: fixed;
+        float: right;
         height: 100%;
         gap: 50px;
         width: 60%;
         margin-right: 550px;
         background: #fff;
-        z-index: 999;
     }
 
     .navbar ul{
@@ -550,6 +549,7 @@ button{
 
     .header h1{
         text-align: center;
+        width: 350px;
         font-size: 75px;
         margin-top: 0px;
     }
