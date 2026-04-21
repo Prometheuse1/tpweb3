@@ -499,7 +499,7 @@ button{
     color: #485C11;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     .navbar{
         justify-content: center;
@@ -508,7 +508,7 @@ button{
         position: fixed;
         height: 100%;
         gap: 50px;
-        width: 80%;
+        width: 60%;
         margin-right: 550px;
         background: #fff;
         z-index: 999;
@@ -531,7 +531,7 @@ button{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
+        position: fixed;
         top: 5%;
         right: 0;
         width: 50px;
